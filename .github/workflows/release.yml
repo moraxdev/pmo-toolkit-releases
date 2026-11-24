@@ -1,0 +1,26 @@
+name: Publish GitHub Release
+# When latest.json changes, publish a GitHub Release for that version with the exe as PMO_Toolkit.exe.
+on:
+  push:
+    branches: [main]
+    paths: [latest.json]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+          VER=$(jq -r .version latest.json)
+          TAG="v$VER"
+          if gh release view "$TAG" >/dev/null 2>&1; then echo "Release $TAG already exists"; exit 0; fi
+          cp "builds/PMO_Toolkit_${TAG}.exe" PMO_Toolkit.exe
+          jq -r .notes latest.json > notes.md
+          printf '\n\n© 2026 Eng. Amr Karam. All rights reserved.\n' >> notes.md
+          gh release create "$TAG" PMO_Toolkit.exe --title "PMO Toolkit $TAG" --notes-file notes.md --target main

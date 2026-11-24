@@ -1,6 +1,6 @@
 # PMO Toolkit — Releases
 
-Download the latest **PMO_Toolkit.exe** from [Releases](../../releases/latest).
+Download the latest **PMO_Toolkit.exe** from [Releases](../../releases/latest) (or from the `builds/` folder).
 It is portable: no installation, just run it. Installed copies update themselves from this page.
 
 Requirements: Windows 10/11, Microsoft Edge WebView2 Runtime, Microsoft Project and Microsoft Excel.
