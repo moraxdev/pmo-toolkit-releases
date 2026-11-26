@@ -1,0 +1,8 @@
+{
+  "app": "PMO Toolkit",
+  "exe": "PMO_Toolkit.exe",
+  "key": "PMOToolkit",
+  "icon": "installer-icon.ico",
+  "feed": "latest.json",
+  "base": "https://raw.githubusercontent.com/moraxdev/pmo-toolkit-releases/main/"
+}
