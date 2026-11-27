@@ -1,12 +1,12 @@
 {
-  "version": "1.2.0",
-  "notes": "First release as PMO Toolkit, with automatic updates.\n- XML → MPP + Excel: chosen columns as a Gantt table, .mpp + Excel export, import date check\n- Column presets (built-in OTC Standard), author and table name per preset\n- One-screen layout, opens maximized",
-  "url": "https://raw.githubusercontent.com/moraxdev/pmo-toolkit-releases/main/builds/PMO_Toolkit_v1.2.0.exe",
-  "size": 6677504,
-  "sha256": "500584cd7b9fa98dad571e7207fb66c452e95abd447b7a9e225fcde84e8f92fb",
+  "version": "1.2.1",
+  "notes": "New app icon.",
+  "url": "https://raw.githubusercontent.com/moraxdev/pmo-toolkit-releases/main/builds/PMO_Toolkit_v1.2.1.exe",
+  "size": 6704128,
+  "sha256": "b8509ca5447167e0cf60eb658329ad09b2d75e7287da1375bdf1176660f7058e",
   "installer": {
-    "url": "https://raw.githubusercontent.com/moraxdev/pmo-toolkit-releases/main/installers/PMO-Toolkit-Setup-1.2.0.exe",
-    "size": 2410420,
-    "sha256": "0f9d876d6498e6671e5c462517ff0f3ff9fe81f01401a9b017424a95220e6fb8"
+    "url": "https://raw.githubusercontent.com/moraxdev/pmo-toolkit-releases/main/installers/PMO-Toolkit-Setup-1.2.1.exe",
+    "size": 2465396,
+    "sha256": "ef580031b4d0e26d7347746f6cd4ecdff9a37c10d72f6849b452144cc7a01660"
   }
 }
